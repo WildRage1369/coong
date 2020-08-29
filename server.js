@@ -263,4 +263,13 @@ function playSong(connection, song) {
   });
 } //song function
 
-client.login(NDU2OTU5NzI1ODQ2OTIxMjQw.WyL26A.PTcE-J7O9vSHh4f_YjHwbUmfXAA);
+app.get("/", (request, response) => {
+  console.log(Date.now() + " Ping Received");
+  response.sendStatus(200);
+}); //forever run code
+app.listen(process.env.PORT); //forever run code
+setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+}, 280000); //forever run code
+
+client.login(process.env.secret);

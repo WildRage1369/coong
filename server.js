@@ -272,4 +272,4 @@ setInterval(() => {
   http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
 }, 280000); //forever run code
 
-client.login(process.env.secret);
+// client.login(process.env.secret)
